@@ -23,6 +23,7 @@ app.use(function (req, res, next) {
                 db.close();
                 return;
             }
+            console.log('inserted a new record in the visits collection');
             // fetch the latest 10 visits, sorted by date
             var cursor = collection.find().sort({'date': -1}).limit(10);
             // accumulate these and send as JSON when done
