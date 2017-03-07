@@ -9,7 +9,7 @@ app.get('/', function (req, res, next) {
 });
 
 app.get('/ping', function (req, res) {
-    if off {
+    if (off) {
 	res.writeHead(404)
 	res.close()
     } else {
