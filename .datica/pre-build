@@ -1,2 +1,2 @@
 #!/bin/bash -e
-echo "pre build hook" > ./pre-build-status
+echo "pre build hook" > /app/.datica/pre-build-status
